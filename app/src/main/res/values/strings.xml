@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="buttonText">SUBMIT</string>
+    <string name="buttonText2">TOTAL SCORE</string>
+
+    <string name="question1">Command to create directories ______ .</string>
+    <string name="option11">makedirectory</string>
+    <string name="option12">makedir</string>
+    <string name="option13">mkdir</string>
+
+    <string name="question2">Command to remove files ______ .</string>
+    <string name="option21">removefiles</string>
+    <string name="option22">rm</string>
+    <string name="option23">rmfile</string>
+
+    <string name="question3">_____ are examples of Operating Systems running on Linux</string>
+    <string name="option31">Ubuntu</string>
+    <string name="option32">CentOS</string>
+    <string name="option33">Windows</string>
+
+    <string name="question4">Command to change between directories </string>
+    <string name="option41">cd</string>
+
+    <string name="hintForText">Enter your answer here</string>
+</resources>
