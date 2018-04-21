@@ -18,7 +18,7 @@
             android:paddingBottom="30dp"
             android:paddingTop="70dp"
             android:text="@string/question1"
-            android:textColor="#880E4F"
+            android:textColor="@color/questionColor"
             android:textSize="23sp" />
 
         <RadioGroup
@@ -34,7 +34,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option11"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <RadioButton
                 android:id="@+id/radio2"
@@ -43,7 +43,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option12"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <RadioButton
                 android:id="@+id/radio3"
@@ -52,7 +52,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option13"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
         </RadioGroup>
 
@@ -73,7 +73,7 @@
             android:paddingBottom="30dp"
             android:paddingTop="40dp"
             android:text="@string/question2"
-            android:textColor="#880E4F"
+            android:textColor="@color/questionColor"
             android:textSize="23sp" />
 
         <RadioGroup
@@ -89,7 +89,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option21"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <RadioButton
                 android:id="@+id/radio22"
@@ -98,7 +98,7 @@
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option22"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <RadioButton
                 android:id="@+id/radio23"
@@ -107,7 +107,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginLeft="25dp"
                 android:text="@string/option23"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
         </RadioGroup>
 
@@ -128,7 +128,7 @@
             android:paddingBottom="30dp"
             android:paddingTop="40dp"
             android:text="@string/question3"
-            android:textColor="#880E4F"
+            android:textColor="@color/questionColor"
             android:textSize="23sp" />
 
         <LinearLayout
@@ -150,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/option31"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <CheckBox
                 android:id="@+id/checkbox2"
@@ -166,7 +166,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/option32"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
             <CheckBox
                 android:id="@+id/checkbox3"
@@ -176,13 +176,13 @@
                 android:layout_marginLeft="25dp"
                 android:paddingLeft="16dp"
                 android:paddingTop="16dp"
-                android:text="string/option33" />
+                android:text="@string/option33" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/option33"
-                android:textColor="#F50057" />
+                android:textColor="@color/optionColor" />
 
         </LinearLayout>
 
@@ -203,7 +203,7 @@
             android:paddingBottom="30dp"
             android:paddingTop="40dp"
             android:text="@string/question4"
-            android:textColor="#880E4F"
+            android:textColor="@color/questionColor"
             android:textSize="23sp" />
 
         <EditText
@@ -212,8 +212,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:hint="@string/hintForText"
+            android:inputType="text"
             android:paddingLeft="20dp"
             android:paddingTop="16dp"
+            android:textColor="@color/optionColor"
             android:textSize="24sp" />
 
         <Button

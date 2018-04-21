@@ -185,10 +185,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateScore(View view) {
+
         /*
          *@description:This is used to check if the given answer by user is correct ,accordingly update the score
          *and display appropriate toasts to the user.
          */
+
         String answer = null;
         answer = answerValue();
         int flag = 1;
@@ -214,16 +216,33 @@ public class MainActivity extends AppCompatActivity {
                     if (answer.equalsIgnoreCase(getResources().getString(R.string.option41))) {
 
                         score = score + 5;
+                        Toast.makeText(getApplicationContext(), "Correct Answer! Score: " + score, Toast.LENGTH_SHORT).show();
                         totalScore();
                         disableButtonClick(button[count]);
                         return;
 
                     } else {
 
+                        //check for incorrectness of question 4
+                        if (!(answer.equalsIgnoreCase(getResources().getString(R.string.option41))) && count == 3) {
+
+                            Toast.makeText(getApplicationContext(), "Incorrect Answer! Score : " + score, Toast.LENGTH_SHORT).show();
+                            totalScore();
+                            disableButtonClick(button[count]);
+                            return;
+                        }
+
                         //check for correctness of answer for question 3 to update score
-                        if (answer.contains("Ubuntu") && answer.contains("CentOS") && (!answer.contains("Windows"))) {
+                        if (answer.contains("Ubuntu") && answer.contains("CentOS")) {
 
                             score = score + 10;
+
+                            if (answer.contains("Windows")) {
+
+                                score = score - 5;
+                                flag = 2;
+                                Toast.makeText(getApplicationContext(), "Partially Correct Answer! Score : " + score, Toast.LENGTH_SHORT).show();
+                            }
 
                         } else {
 
@@ -253,7 +272,7 @@ public class MainActivity extends AppCompatActivity {
             //Toast message when answer is correct
             if (flag == 1) {
 
-                Toast.makeText(getApplicationContext(), "Correct Answer!" + score, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Correct Answer! Score: " + score, Toast.LENGTH_SHORT).show();
 
             }
 
